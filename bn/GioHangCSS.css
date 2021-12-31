@@ -1,0 +1,160 @@
+/* CSS GIỎ HÀNG */
+#layer_GH{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    display: none;
+    z-index: 6;
+    
+}
+.GioHang{
+    width: 70%;
+    height: auto;
+    max-height: 90%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    z-index: 7;
+}
+#Top_GH{
+    height: 20%;
+    font-size: 250%;
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    color:aliceblue;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color:rgba(0, 128, 0, 0.733);
+    padding: 10px 5px;
+}
+#Top_GH div:hover{
+    cursor: pointer !important;
+    color: rgb(255, 255, 255) !important;
+}
+#Top_GH>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.input_GH{
+    height: 100% !important;
+    margin: 0 20px;
+    font-size: 90%;
+    
+}
+.input_GH:hover{
+    background-color: rgba(255, 255, 0, 0.699);
+}
+
+
+
+#Bottom_GH{
+    display: inline-flex;
+    height: 10%;
+    font-size: 150%;
+    border-top: 1px solid black;
+    color:aliceblue;
+    justify-content: end;
+    padding: 1%;  
+    box-sizing: border-box;  
+    background-color:rgba(0, 128, 0, 0.733); 
+}
+#Bottom_GH *{
+    margin: auto 1%;
+}
+#MaDonHang_DH{
+    width: 100%; 
+    padding: 5px; 
+    border: #46494d8f 1px solid; 
+    background-color: rgba(0, 128, 0, 0.733);
+    color:aliceblue;
+}
+#content_GH{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.DSSP{
+    padding: 2% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.205);
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+}
+#ThongTinSanPham_GH img{
+    width: 150px;
+    height: 100%;
+}
+.SoLuong_GH input{
+    width: 40px;
+}
+#ThongTinSanPham_GH{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 200px;
+  
+}
+#ThongTinSanPham_GH p{
+    word-wrap: break-word;
+   
+    
+}
+.DelSP{
+    font-size: 30px;
+    position: absolute;
+    right: 3%;
+
+}
+.DelSP:hover{
+    color: rgb(122, 117, 117);
+    cursor: pointer;
+}
+.DelSP:active{
+    font-size: 29px;
+}
+#ChangeSL_GH{
+    font-size: 150%;
+    position: absolute;
+}
+#ChangeSL_GH:hover{
+    color: rgb(122, 117, 117);
+    cursor: pointer;
+}
+#ChangeSL_GH:active{
+    color: rgb(77, 75, 75);
+}
+@media (max-width: 780px){
+    #DSSP_GH {
+        font-size: 18px;
+    }
+    .SoLuong_GH{
+        font-size: 18px;
+    }
+    .DelSP{
+        font-size: 20px;
+    }
+    .input_GH{
+        font-size: 70%;
+        margin: 0 5px;
+    }
+}
+@media (max-width: 560px){
+    .DelSP{
+        top:40%;
+        right: 6%;
+    }
+}
